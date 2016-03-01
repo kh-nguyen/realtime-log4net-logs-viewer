@@ -1,0 +1,131 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Allow Font Awesome Icons in lieu of jQuery UI and only apply when using a FA icon
+----------------------------------------------------------*/
+.ui-icon[class*=" fa-"] {
+    /* Remove the jQuery UI Icon */
+    background: none repeat scroll 0 0 transparent;
+    /* Remove the jQuery UI Text Indent */
+    text-indent: 0;
+    /* Bump it up - jQuery UI is -8px */
+    margin-top: -0.5em;
+}
+
+.ui-button-icon-only .ui-icon[class*=" fa-"] {
+    /* Bump it - jQuery UI is -8px */
+    margin-left: -7px;
+}
+
+/* Allow use of icon-large to be properly aligned */
+.ui-icon.icon-large {
+    margin-top: -0.75em;
+}
+/*----------------------------------------------------------*/
+
+/* jqGrid, make the font size resiable
+----------------------------------------------------------*/
+.ui-jqgrid > .ui-jqgrid-view {
+    font-size: 0.746em;
+}
+
+/* jqGrid, make the textarea to fit the table cell
+----------------------------------------------------------*/
+.ui-jqgrid td textarea {
+    width: 100%;
+}
+
+/* jqGrid, reset the table formatting
+----------------------------------------------------------*/
+.ui-jqgrid input {
+    width: auto;
+}
+
+/* jqGrid, rewrite the loading css to put it on the top of the grid
+----------------------------------------------------------*/
+.ui-jqgrid .loading {
+    top: 0;
+}
+
+/* jqGrid, make the View form data to wrap on new line
+----------------------------------------------------------*/
+.ui-jqdialog-content .form-view-data {
+    white-space: pre-wrap;
+}
+
+/* jqGrid, hide the x-scolling for the grid when used with Bootstrap
+----------------------------------------------------------
+.ui-jqgrid *,
+.ui-jqgrid *:before,
+.ui-jqgrid *:after {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+/* jqGrid, correct icons' borders when hover
+----------------------------------------------------------*/
+.ui-jqgrid table {
+    border-collapse: separate !important;
+}
+
+/* jqGrid, prevent the search input boxes from collapsing to too small
+----------------------------------------------------------*/
+.searchFilter .input-elm {
+    min-width: 100px;
+}
+
+.ui-jqgrid .ui-search-clear {
+    text-align: center !important;
+}
+
+/* jqGrid, make the form label to appear on top
+----------------------------------------------------------*/
+.ui-jqdialog-content .CaptionTD {
+    vertical-align: top;
+    width: 10%;
+}
+
+/* jqGrid, correct the padding for the search rules in the search box
+----------------------------------------------------------*/
+.ui-jqdialog .group td {
+    padding: 2px !important;
+}
+
+/* jqGrid, make buttons of the pager to always fit on one line
+----------------------------------------------------------*/
+.ui-jqgrid .ui-pg-table td {
+    width: auto !important;
+}
+
+/* jqGrid, allow the query result to show with maximum width
+----------------------------------------------------------*/
+.ui-jqdialog .queryresult {
+    max-width: 100% !important;
+}
+
+/* jqGrid, highlight hyper-links
+----------------------------------------------------------*/
+.ui-jqgrid a:hover {
+    text-decoration: underline !important;
+}
+
+.ui-jqgrid a {
+    color: #0066cc;
+    text-decoration: none;
+}
