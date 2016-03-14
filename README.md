@@ -11,3 +11,5 @@ For each computer that you would like to send the log4net's logs to the viewer, 
     <layout type="log4net.Layout.JsonLayout" />
   </appender>
 ```
+
+Also, you need to install "log4net.Layout.JsonLayout" library to the software of the computer.
